@@ -10,7 +10,7 @@ This provides a way to easily activate style sheets in the Chrome developer tool
 
 ## Getting Started
 
-1. Go to chrome://flags
+1. Go to <a href="chrome://flags">chrome://flags</a>
 
 2. Enable Developer Tools experiments
 
@@ -18,7 +18,7 @@ This provides a way to easily activate style sheets in the Chrome developer tool
 
 4. Clone this repo: `git clone https://github.com/ryanpmiller/devtools-theme`
 
-5. Go to chrome://extensions
+5. Go to <a href="chrome://extensions">chrome://extensions</a>
 
 6. Select "Developer mode"
 
