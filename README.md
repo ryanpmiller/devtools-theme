@@ -28,6 +28,8 @@ This provides a way to easily activate style sheets in the Chrome developer tool
 
 9. Enjoy your new Dev Tools theme
 
+![Alt text](/screenshot/theme.png "Theme Screenshot")
+
 
 
 
