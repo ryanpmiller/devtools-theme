@@ -16,7 +16,7 @@ This provides a way to easily activate style sheets in the Chrome developer tool
 
 3. Open the Chrome Developer Tools, click on the gears icon, go to Experiments and check "Allow UI themes"
 
-4. cd /Users/<User Name>/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets (Mac OSX)
+4. `cd /Users/<User Name>/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets` (Mac OSX)
 
 5. Clone this repo: `git clone https://github.com/ryanpmiller/devtools-theme`
 
