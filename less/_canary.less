@@ -1,0 +1,42 @@
+//*********************************************
+// panel-sources-controls.less
+//*********************************************
+
+// #scripts-debug-toolbar changed to .scripts-debug-toolbar
+.scripts-debug-toolbar {
+	&:extend(#scripts-debug-toolbar);
+}
+
+// text for rendering tab in drawer
+.help-indent-labels label {
+	color: @global-text !important;
+}
+
+// override for pause exceptions ui module
+// NOTE: once this hits stable, remove the red/yellow styling of pause button
+.scripts-debug-toolbar-drawer {
+	background-color: transparent !important;
+	border-bottom: none !important;
+	color: @global-text !important;
+}
+
+
+//*********************************************
+// status-bar.less
+//*********************************************
+
+// adjust selected filter style
+.filter-bitset-filter {
+
+	li {
+		padding: 2px 6px !important;
+		margin: auto 2px !important;
+		border-radius: 8px !important;
+	}
+}
+
+// Move position of dropdown arrow so it doesn't hug right border
+.status-bar-select-arrow {
+	position: relative !important;
+	right: 5px !important;
+}

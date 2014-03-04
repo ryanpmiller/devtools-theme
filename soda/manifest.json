@@ -1,0 +1,7 @@
+{
+	"name": "Soda Developer Tools Theme",
+	"version": "1",
+	"devtools_page": "devtools.html",
+	"homepage_url": "https://github.com/ryanpmiller/devtools-theme",
+	"manifest_version": 2
+}

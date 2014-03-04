@@ -1,0 +1,18 @@
+{
+  "name": "devtools-theme",
+  "version": "0.0.1",
+  "description": "Chrome Devtools themes",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanpmiller/devtools-theme"
+  },
+  "author": "Ryan Miller",
+  "devDependencies": {
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-compress": "~0.7.0",
+    "grunt-bump": "0.0.13"
+  }
+}
