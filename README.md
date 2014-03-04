@@ -26,7 +26,7 @@ This provides a way to easily activate style sheets in the Chrome developer tool
 
 8. Click on "Load unpacked extension"
 
-9. Select the "custom" directory under the devtools-theme directory you've cloned
+9. Select the "soda" directory under the devtools-theme directory you've cloned
 
 10. Enjoy your new Dev Tools theme
 
