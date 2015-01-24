@@ -67,19 +67,18 @@
 /**********************************************
 /* Code Highlighting [WEBKIT]
 /**********************************************/
-
 /*-- HTML --*/
-.webkit-html-attribute-name {color: @xml-attribute !important;}
-.webkit-html-attribute-value {color: @xml-string !important;}
-.webkit-html-comment {color:@xml-comment!important;font-style:italic;}
-.webkit-html-resource-link,
-.webkit-html-external-link {color:@xml-link!important;}
-.webkit-html-tag,
-.webkit-html-tag-name {color:@xml-tag!important;}
-.webkit-html-text-node,
-.webkit-html-css-node,
-.webkit-html-js-node {color:@xml-js-node!important;}
-.webkit-html-pseudo-element {color:@xml-pseudo !important;}
+@{body-deep-selector} .webkit-html-attribute-name {color: @xml-attribute !important;}
+@{body-deep-selector} .webkit-html-attribute-value {color: @xml-string !important;}
+@{body-deep-selector} .webkit-html-comment {color:@xml-comment!important;font-style:italic;}
+@{body-deep-selector} .webkit-html-resource-link,
+@{body-deep-selector} .webkit-html-external-link {color:@xml-link!important;}
+@{body-deep-selector} .webkit-html-tag,
+@{body-deep-selector} .webkit-html-tag-name {color:@xml-tag!important;}
+@{body-deep-selector} .webkit-html-text-node,
+@{body-deep-selector} .webkit-html-css-node,
+@{body-deep-selector} .webkit-html-js-node {color:@xml-js-node!important;}
+@{body-deep-selector} .webkit-html-pseudo-element {color:@xml-pseudo !important;}
 
 /*-- CSS --*/
 .selector-matches {color:@css-builtin!important;}

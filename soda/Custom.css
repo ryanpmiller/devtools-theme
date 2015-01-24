@@ -608,30 +608,30 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 /* Code Highlighting [WEBKIT]
 /**********************************************/
 /*-- HTML --*/
-.webkit-html-attribute-name {
+body /deep/ .webkit-html-attribute-name {
   color: #61ce3c !important;
 }
-.webkit-html-attribute-value {
+body /deep/ .webkit-html-attribute-value {
   color: #ffffff !important;
 }
-.webkit-html-comment {
+body /deep/ .webkit-html-comment {
   color: #aeaeae !important;
   font-style: italic;
 }
-.webkit-html-resource-link,
-.webkit-html-external-link {
+body /deep/ .webkit-html-resource-link,
+body /deep/ .webkit-html-external-link {
   color: #ff6400 !important;
 }
-.webkit-html-tag,
-.webkit-html-tag-name {
+body /deep/ .webkit-html-tag,
+body /deep/ .webkit-html-tag-name {
   color: #7f90aa !important;
 }
-.webkit-html-text-node,
-.webkit-html-css-node,
-.webkit-html-js-node {
+body /deep/ .webkit-html-text-node,
+body /deep/ .webkit-html-css-node,
+body /deep/ .webkit-html-js-node {
   color: #c2c3c3 !important;
 }
-.webkit-html-pseudo-element {
+body /deep/ .webkit-html-pseudo-element {
   color: #49a5d2 !important;
 }
 /*-- CSS --*/
@@ -1251,6 +1251,9 @@ body:not(.undocked) .toolbar-background {
 /**********************************************
 /* Resources & Sources Sidebar
 /**********************************************/
+.panel .sidebar {
+  background: none !important;
+}
 /*-- default text color --*/
 .panel.resources .base-storage-tree-element-title,
 .panel.resources .base-storage-tree-element-subtitle,
@@ -1541,6 +1544,9 @@ body:not(.undocked) .toolbar-background {
   color: #fbde2d !important;
   text-shadow: none !important;
 }
+.timeline-details-view-body {
+  background: none !important;
+}
 #counter-values-bar {
   position: relative !important;
   top: 1px !important;
@@ -1661,17 +1667,17 @@ body:not(.undocked) .toolbar-background {
 #elements-content .CodeMirror {
   outline: none !important;
 }
-.panel.elements .editing {
+body /deep/ .editing {
   background-color: #0c1021 !important;
   outline: 1px solid #fbde2d !important;
   color: #fbde2d !important;
 }
-.panel.elements .outline-disclosure ol:focus li.selected .selection,
-.panel.elements .outline-disclosure li.selected .selection {
+body /deep/ .outline-disclosure ol:focus li.selected .selection,
+body /deep/ .outline-disclosure li.selected .selection {
   outline: 1px solid #27346c !important;
   background-color: #131934 !important;
 }
-.panel.elements .outline-disclosure li.hovered:not(.selected) .selection {
+body /deep/ .outline-disclosure li.hovered:not(.selected) .selection {
   border-radius: 0 !important;
   background-color: #131934 !important;
   border-top: 1px solid #202b59 !important;
@@ -2276,4 +2282,8 @@ label.checkbox,
 }
 iframe.extension {
   background: #fff !important;
+}
+.event-bars .event-bar .header .title {
+  text-shadow: none !important;
+  color: #fbde2d !important;
 }
