@@ -278,6 +278,12 @@
 .panel .status-bar-text {
   color: #fbde2d !important;
 }
+body /deep/ .insertion-point-sidebar {
+  background: #0c1021;
+}
+body /deep/ .platform-mac {
+  color: #fff !important;
+}
 body.dock-to-right.inactive:not(.undocked):not(.overlay-contents),
 body.dock-to-right:not(.undocked):not(.overlay-contents) {
   border-left: transparent !important;
@@ -842,12 +848,12 @@ span.cm-token-highlight:before {
 /***********************/
 /* Tabbed Panes
 /***********************/
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header {
   background: -webkit-linear-gradient(#131934, #131934) !important;
   box-shadow: inset 0 1px 0 #1c264e !important;
   border-bottom: 1px solid #05070e !important;
 }
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab {
   border-top: 2px solid rgba(0, 0, 0, 0) !important;
   border-left: none !important;
   border-right: none !important;
@@ -856,27 +862,30 @@ span.cm-token-highlight:before {
   margin-top: 0 !important;
   margin-bottom: 1px !important;
   border-color: transparent !important;
+  text-overflow: initial !important;
 }
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab:hover {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab:hover {
   color: #ffffff !important;
 }
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab.selected {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab.selected {
   background: none !important;
   border-top: 2px solid #fbde2d !important;
   color: #ffffff !important;
+  -webkit-border-image: none;
   font-size: 1em;
 }
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-contents {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-contents {
   color: #ffffff !important;
 }
-.tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab-title {
+.tabbed-pane::shadow:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab-title {
   line-height: 16px !important;
 }
-.tabbed-pane:not(.help-window-main) .overrides-view .tabbed-pane-header-tab {
+.tabbed-pane::shadow:not(.help-window-main) .overrides-view .tabbed-pane-header-tab {
   border-top: none !important;
   margin-left: 6px !important;
+  text-overflow: initial !important;
 }
-.tabbed-pane:not(.help-window-main) .overrides-view .tabbed-pane-header-tab.selected {
+.tabbed-pane::shadow:not(.help-window-main) .overrides-view .tabbed-pane-header-tab.selected {
   border-top: none !important;
   border-left: 6px solid #fbde2d !important;
   margin-left: 0 !important;
@@ -899,6 +908,8 @@ span.cm-token-highlight:before {
   border-top: none !important;
   border-bottom: #222 !important;
 }
+body.undocked.platform-mac.component-root .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
+body.platform-mac.component-root .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
 body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
 body.undocked.platform-mac-mountain-lion .toolbar-background,
 body.platform-mac-mountain-lion.inactive .toolbar-background,
@@ -907,7 +918,9 @@ body.undocked.platform-mac.inactive .toolbar-background,
 body.undocked.platform-mac .toolbar-background,
 body.inactive .toolbar-background,
 body:not(.undocked) .toolbar-background {
-  background-image: -webkit-linear-gradient(#131934, #131934) !important;
+  background-image: none !important;
+  background-color: #202b59 !important;
+  color: white !important;
 }
 .toolbar {
   background: -webkit-linear-gradient(#131934, #131934) !important;
@@ -1032,11 +1045,11 @@ body:not(.undocked) .toolbar-background {
   display: inline-block;
   color: #999 !important;
 }
-.search-drawer-header label.search-config-label,
+.vbox::shadow .search-drawer-header label.search-config-label,
 .drawer .settings-tab label,
 #drawer-footer td label {
   text-shadow: none !important;
-  color: #bbb !important;
+  color: #fff !important;
 }
 .overrides-view .tabbed-pane-header-tab {
   color: #999 !important;
@@ -1051,6 +1064,9 @@ body:not(.undocked) .toolbar-background {
 .overrides-view .tabbed-pane-content select:disabled {
   background-color: #888!important;
   border-color: #888 !important;
+}
+.overrides-splash-screen {
+  background: #202b59 !important;
 }
 .overrides-footer {
   background-color: #333 !important;
@@ -1544,6 +1560,9 @@ body:not(.undocked) .toolbar-background {
   color: #fbde2d !important;
   text-shadow: none !important;
 }
+#memory-graphs-container > div:last-child {
+  background-color: transparent !important;
+}
 .timeline-details-view-body {
   background: none !important;
 }
@@ -1705,9 +1724,13 @@ body /deep/ .outline-disclosure li.hovered:not(.selected) .selection {
   background-color: #131934 !important;
   border-radius: 3px;
 }
+.profiles-status-bar {
+  background-color: transparent !important;
+}
 .profiles-status-bar .status-bar,
 .retainers-view-header,
 .heap-snapshot-view .class-view-toolbar,
+.heap-snapshot-view .heap-snapshot-view-resizer,
 .timeline-frame-container {
   background: -webkit-linear-gradient(#131934, #131934) !important;
   box-shadow: inset 0 1px 0 #1c264e;
@@ -2100,24 +2123,25 @@ body /deep/ .outline-disclosure li.hovered:not(.selected) .selection {
 /* Status bar
 /************************************************/
 /*console/network elements that are not panel selectors*/
-select.status-bar-item,
-select.status-bar-item:hover,
-.filter-bitset-filter li {
+.status-bar::shadow select.status-bar-item,
+.status-bar::shadow select.status-bar-item:hover,
+.status-bar::shadow .filter-bitset-filter li,
+.status-bar::shadow .status-bar-shadow {
   color: #AAA !important;
   text-shadow: none !important;
 }
-select.status-bar-item option {
+.status-bar::shadow select.status-bar-item option {
   background-color: #282828 !important;
 }
-.status-bar-items {
+.status-bar::shadow .status-bar-items {
   border-left: none !important;
 }
-select.status-bar-item,
-select.status-bar-item:hover {
+.status-bar::shadow select.status-bar-item,
+.status-bar::shadow select.status-bar-item:hover {
   border-left: 1px solid #333 !important;
   border-right: 1px solid #333 !important;
 }
-.split-view-sidebar-right {
+.status-bar::shadow .split-view-sidebar-right {
   border-left: 1px solid #3A3A3A !important;
   -webkit-box-shadow: none !important;
 }

@@ -1,7 +1,7 @@
 /***********************/
 /* Tabbed Panes
 /***********************/
-.tabbed-pane:not(.help-window-main) {
+.tabbed-pane::shadow:not(.help-window-main) {
 
 	.tabbed-pane-header {
 		background: -webkit-linear-gradient(@gradient-top, @gradient-bottom) !important;
@@ -17,6 +17,7 @@
 			margin-top: 0 !important;
 			margin-bottom: 1px !important;
 			border-color: transparent !important;
+			text-overflow: initial !important;
 
 			&:hover {
 				color: @tab-label-selected !important;
@@ -26,6 +27,7 @@
 				background: none !important;
 				border-top: 2px solid @tab-highlighted !important;
 				color: @tab-label-selected !important;
+				-webkit-border-image: none;
 				font-size: 1em;
 			}
 		}
@@ -40,9 +42,10 @@
 	}
 }
 
-.tabbed-pane:not(.help-window-main) .overrides-view .tabbed-pane-header-tab {
+.tabbed-pane::shadow:not(.help-window-main) .overrides-view .tabbed-pane-header-tab {
 	border-top: none !important;
 	margin-left: 6px !important;
+	text-overflow: initial !important;
 
 	&.selected {
 		border-top: none !important;
@@ -80,6 +83,8 @@
 }
 
 // Override MAC Toolbar Background
+body.undocked.platform-mac.component-root .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
+body.platform-mac.component-root .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
 body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
 body.undocked.platform-mac-mountain-lion .toolbar-background,
 body.platform-mac-mountain-lion.inactive .toolbar-background,
@@ -88,7 +93,10 @@ body.undocked.platform-mac.inactive .toolbar-background,
 body.undocked.platform-mac .toolbar-background,
 body.inactive .toolbar-background,
 body:not(.undocked) .toolbar-background {
-	background-image: -webkit-linear-gradient(@gradient-top, @gradient-bottom) !important;
+	// background-image: -webkit-linear-gradient(@gradient-top, @gradient-bottom) !important;
+	background-image: none !important;
+	background-color: lighten(@global-background, 15%) !important;
+	color: white !important;
 }
 
 // Main Toolbar
