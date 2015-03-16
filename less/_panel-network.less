@@ -25,6 +25,9 @@
 	}
 }
 
+.network-item-view {
+	background: @global-background !important;
+}
 
 /*dropdownlist in network panel*/
 .timeline-column option {
@@ -33,9 +36,10 @@
 }
 
 //Header Contents Label
+.request-headers-view .outline-disclosure .header-name,
 .resource-headers-view .outline-disclosure .header-name,
 #network-views .resource-view .infoList dt {
-	color: lighten(@global-background, 25%) !important;
+	color: @global-text !important;
 }
 
 //Header Contents Values

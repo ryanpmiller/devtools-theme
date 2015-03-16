@@ -1368,14 +1368,18 @@ body:not(.undocked) .toolbar-background {
 .data-grid .network-timeline-grid .resources-divider {
   border-right: 1px solid rgba(51, 51, 51, 0.8);
 }
+.network-item-view {
+  background: #0c1021 !important;
+}
 /*dropdownlist in network panel*/
 .timeline-column option {
   color: #fbde2d !important;
   background: #0c1021 !important;
 }
+.request-headers-view .outline-disclosure .header-name,
 .resource-headers-view .outline-disclosure .header-name,
 #network-views .resource-view .infoList dt {
-  color: #2e3d7f !important;
+  color: #fbde2d !important;
 }
 .resource-headers-view .outline-disclosure .header-value,
 #network-views .resource-view .infoList dd {
